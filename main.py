@@ -9,17 +9,17 @@ def main():
     # l1 = Line(p1, p2)
     # win.draw_line(l1, "black")
 
-    c1 = Cell(win, Point(50, 50), Point(100, 100))
-    c1.draw()
-    c2 = Cell(win, Point(150, 150), Point(200, 200))
+    c1 = Cell(win)
+    c1.draw(50, 50, 100, 100)
+    c2 = Cell(win)
     c2.has_bottom_wall = False
-    c2.draw()
-    c3 = Cell(win, Point(250, 250), Point(300, 300))
+    c2.draw(150, 150, 200, 200)
+    c3 = Cell(win)
     c3.has_right_wall = False
-    c3.draw()
-    c4 = Cell(win, Point(350, 350), Point(400, 400))
+    c3.draw(250, 250, 300, 300)
+    c4 = Cell(win)
     c4.has_top_wall = False
-    c4.draw()
+    c4.draw(350, 350, 400, 400)
     win.wait_for_close()
 
 
